@@ -162,51 +162,11 @@ pip install -r requirements.txt
   * `data/Chemical_Labs.csv`
   * `data/Dictionaries/`
 
-* **Run Preprocessing:**
-
-```bash
-python scripts/preprocess.py \
-  --demographics data/Demographics.csv \
-  --response data/Response.csv \
-  --questionnaire data/Questionnaire.csv \
-  --chemical_labs data/Chemical_Labs.csv \
-  --output outputs/Derived/combined_data.csv
-```
 
 * **Launch Jupyter Notebook:**
   Open and run sequentially the single notebook:
   `AST_Analysis_prediction.ipynb`
 
-* **Automated Scripts (optional):**
-
-```bash
-python scripts/train_models.py \
-  --data_path outputs/Derived/combined_data.csv \
-  --models_dir outputs/models/ \
-  --metrics_path outputs/tables/model_metrics.csv
-
-python scripts/interpretability.py \
-  --data_path outputs/Derived/combined_data.csv \
-  --models_dir outputs/models/ \
-  --out_corr outputs/tables/robust_correlations.csv \
-  --out_figures outputs/figures/
-
-python scripts/clustering.py \
-  --data_path outputs/Derived/combined_data.csv \
-  --out_fig outputs/figures/dendrogram.png
-
-python scripts/calibration.py \
-  --data_path outputs/Derived/combined_data.csv \
-  --out_fig_roc outputs/figures/roc_curve_ast.png \
-  --out_fig_pr outputs/figures/pr_curve_ast.png \
-  --out_cal outputs/figures/calibration_lgbm.png
-
-python scripts/mediation.py \
-  --data_path outputs/Derived/combined_data.csv \
-  --out_csv outputs/tables/mediation_results_all.csv
-```
-
----
 
 ## 📈 **Key Findings**
 
