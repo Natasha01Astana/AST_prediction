@@ -1,6 +1,4 @@
-Конечно! Вот готовый текст файла `README.md` с нужным форматированием и учётом, что у вас только один `.ipynb` файл и остальные — это csv-данные. Его можно сразу загрузить в репозиторий:
 
-````markdown
 # **AST Prediction** 📊🔬
 
 **Predictive pipeline for serum AST (aspartate aminotransferase) levels using NHANES (1988–2018) clinical, biochemical, and lifestyle data.**  
